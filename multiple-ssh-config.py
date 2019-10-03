@@ -19,6 +19,7 @@ for host in host_list:
   tn.write("line vty 0 4\n")
   tn.write("login local\n")
  tn.write("end\n")
+ tn.write("write\n")
  tn.write("exit\n")
 
  print tn.read_all()
